@@ -5,6 +5,6 @@ try
 }
 catch (Exception $e)
 {
-        echo 'Les informations sont erronées. Connexion à la base de données impossibe. '
+        echo 'Les informations sont erronées. Connexion à la base de données impossibe. ';
 }
 ?>
