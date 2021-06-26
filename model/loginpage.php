@@ -23,7 +23,7 @@ else
         $_SESSION['nickname'] = $_POST['nickname'];
         $_SESSION['admin'] = $donnees['admin'];
         
-        if (isset($_SESSION['users_id']) AND isset($_SESSION['nickname']))
+        if (isset($_SESSION['users_id']) && isset($_SESSION['nickname']))
             {
                 header('Location: ../view/index.php');
             }
