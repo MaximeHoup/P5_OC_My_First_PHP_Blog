@@ -14,7 +14,7 @@
                     <div class="col-lg-8 col-xl-7">
                         <form method="post" action="../controller/mail.php">
                             <div class="form-floating">
-                                <input class="form-control" id="inputName" type="text" mail="nom" placeholder="Enter your name..." />
+                                <input class="form-control" id="inputName" type="text" name="name" placeholder="Enter your name..." />
                                 <label for="inputName">Nom</label>
                             </div>
                             <div class="form-floating">
@@ -22,7 +22,7 @@
                                 <label for="inputEmail">Adresse mail</label>
                             </div>
                             <div class="form-floating">
-                                <textarea class="form-control" id="inputMessage" name="message"placeholder="Enter your message here..." style="height: 12rem"></textarea>
+                                <textarea class="form-control" id="inputMessage" name="content"placeholder="Enter your message here..." style="height: 12rem"></textarea>
                                 <label for="inputMessage">Message</label>
                             </div>
                             <div class="text-center mt-4">
