@@ -5,6 +5,6 @@ try
 }
 catch (Exception $e)
 {
-        die('Erreur : ' . $e->getMessage());
+        echo 'Les informations sont erronées. Connexion à la base de données impossibe. '
 }
 ?>
