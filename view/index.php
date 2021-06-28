@@ -10,10 +10,10 @@
         <?php include("aboutme.php"); ?>
         <?php include("contact.php"); ?>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col text-center">
                         <h4 class="text-uppercase mb-4">Me retrouver</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/MaximeHoup"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/lokhi_r/"><i class="fab fa-fw fa-instagram"></i></a>
