@@ -32,14 +32,14 @@
                     ?>
                     <div class="col-md-6 col-lg-4 mt-4">
                         <div class="card bg-secondary">
-                        <img class="card-img-top" src="../oc.jpg" alt="image du post">
+                        <img class="card-img-top" src="../assets/img/oc.jpg" alt="image du post">
                         <div class="card-body">
                             <h5 class="card-title text-center text-uppercase"><?php echo $donnees ['posts_id']; ?></h5>
                             <p class="card-text mt-5"><?php echo htmlspecialchars($donnees ['content']); ?></p>
                             <p class="mt-5"><small class="text-muted"><?php echo $donnees ['commentdatefr']; ?></small></p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">LIRE</a>
+                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">ACCEPTER</a>
                             <button type="button" class="btn btn-outline-dark bg-danger mx-2" data-bs-toggle="modal" data-bs-target="#deleteconf">SUPPRIMER</button>
                         </div>
                     </div>
