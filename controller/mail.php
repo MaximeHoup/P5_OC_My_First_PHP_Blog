@@ -13,7 +13,7 @@
 		$recipient = "adminp5@gmail.com";
 		$subject = "Contact Form";
 		$mailheader = "From: $email \r\n";
-		mail($recipient, $subject, $formcontent, $mailheader) or die("Erreur! Le message n'a pu être envoyer");
+		mail($recipient, $subject, $formcontent, $mailheader) or echo '<p>Erreur! Un ou plusieurs champ(s) invalide(s)</p>';
 		echo '<p>Votre message a bien été envoyé.</p>'; ?>
 	</body>
 </html>
