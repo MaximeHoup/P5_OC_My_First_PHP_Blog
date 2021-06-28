@@ -32,7 +32,7 @@
                     ?>
                     <div class="col-md-6 col-lg-4 mt-4">
                         <div class="card bg-secondary">
-                        <img class="card-img-top" src="../oc.jpg" alt="image du post">
+                        <img class="card-img-top" src="../assets/img/oc.jpg" alt="image du post">
                         <div class="card-body">
                             <h5 class="card-title text-center text-uppercase"><?php echo htmlspecialchars($donnees ['title']); ?></h5>
                             <p class="card-text mt-5"><?php echo htmlspecialchars($donnees ['leadparagraph']); ?></p>
