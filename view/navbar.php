@@ -10,14 +10,20 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.php">Accueil</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="postlist.php">Liste des posts</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="createpost.php">Créer un post</a></li>
                         <?php
                         session_start();
+                        $admin = $_SESSION['admin'];
+                        if ($admin == "1") {
+                            ?>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="createpost.php">Créer un post</a></li>
+                            <?php
+                        }
+
                         if (isset($_SESSION['users_id']))
                         {
-                        ?>
+                            ?>
                             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../model/logoutpage.php">Déconnexion</a></li>
-                        <?php
+                            <?php
                         }
                         else
                         {
