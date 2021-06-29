@@ -15,8 +15,8 @@
                 <div class="row">
                     <div class="col text-center">
                         <h4 class="text-uppercase mb-4">Me retrouver</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/MaximeHoup"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/lokhi_r/"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://github.com/MaximeHoup"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/lokhi_r/"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
