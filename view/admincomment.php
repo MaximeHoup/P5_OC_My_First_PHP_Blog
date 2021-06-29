@@ -22,7 +22,7 @@
                 <?php
                 require_once('../model/dbconnect.php');
 
-                $reponse = $bdd->query('SELECT content, posts_id, nickname, comments_id, date_format(commentdate, \'Le %d/%m/%Y à %Hh%imin%ss\') AS commentdatefr FROM comments WHERE commentaccepted = "0"');
+                $reponse = $bdd->query('SELECT *, date_format(commentdate, \'Le %d/%m/%Y à %Hh%imin%ss\') AS commentdatefr FROM comments INNER JOIN posts ON comments.posts_id = posts.posts_id WHERE commentaccepted = "0"');
                 
                 ?>
 
@@ -35,12 +35,12 @@
                         <div class="card bg-secondary">
                         <img class="card-img-top" src="../assets/img/oc.jpg" alt="image du post">
                         <div class="card-body">
-                            <h5 class="card-title text-center text-uppercase"><?php echo $donnees ['posts_id']; ?></h5>
+                            <h5 class="card-title text-center text-uppercase"><?php echo $donnees ['title']; ?></h5>
                             <p class="card-text mt-5"><?php echo htmlspecialchars($donnees ['content']); ?></p>
-                            <p class="mt-5"><small class="text-muted"><?php echo $donnees ['commentdatefr'], $donnees ['comments_id']; ?></small></p>
+                            <p class="mt-5"><small class="text-muted"><?php echo $donnees ['commentdatefr']; ?></small></p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="../model/admincomment.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">ACCEPTER</a>
+                            <a href="../model/admincomment.php?comment=<?php echo $donnees['comments_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">ACCEPTER</a>
                             <a href="../model/deletecomment.php?comment=<?php echo $donnees['comments_id'] ?>" class="btn btn-outline-dark bg-danger mx-2">SUPPRIMER</a>
                         </div>
                     </div>
