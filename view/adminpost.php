@@ -17,6 +17,7 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <h4 class="text-center pt-2">Toute suppression est irréversible. La perte des données sera définitive.</h4>
 
 
                 <?php
@@ -36,46 +37,15 @@
                         <div class="card-body">
                             <h5 class="card-title text-center text-uppercase"><?php echo htmlspecialchars($donnees ['title']); ?></h5>
                             <p class="card-text mt-5"><?php echo htmlspecialchars($donnees ['leadparagraph']); ?></p>
-                            <p class="mt-5"><small class="text-muted"><?php echo $donnees ['modificationdatefr']; ?></small></p>
+                            <p class="mt-5"><small class="text-muted"><?php echo $donnees ['modificationdatefr'], $donnees ['posts_id']; ?></small></p>
                         </div>
                         <div class="card-footer text-center">
                             <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">LIRE</a>
                             <a href="editpost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-warning mx-2">MODIFIER</a>
-                            <button type="button" class="btn btn-outline-dark bg-danger mx-2" data-bs-toggle="modal" data-bs-target="#deleteconf">SUPPRIMER</button>  
+                            <a href="../model/deletepost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-danger mx-2">SUPPRIMER</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="modal fade" id="deleteconf" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                            <div class="modal-body text-center pb-5">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Confirmation de suppression</h2>
-                                            <!-- Icon Divider-->
-                                            <div class="divider-custom">
-                                                <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                                <div class="divider-custom-line"></div>
-                                            </div>
-                                            <p class="text-secondary mt-4">Êtes-vous sûr de vouloir supprimer ce post ?</p>
-                                            <p class="text-secondary">Cette action est irréversible.</p>
-                                            <p class="text-secondary mb-4">La perte des données sera définitive.</p>
-                                            <a href="#" class="btn btn-outline-light bg-danger mx-2" data-bs-dismiss="modal"><i class="fas fa-times fa-fw mx-1"></i>Annuler</a>
-                                            <a href="../model/deletepost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-light bg-primary mx-2"><i class="fas fa-check fa-fw mx-1"></i>Supprimer</a>
-                                                
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </div>
                 <?php
                 }
                 $reponse->closeCursor();
