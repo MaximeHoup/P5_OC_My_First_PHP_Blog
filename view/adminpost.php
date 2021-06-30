@@ -40,9 +40,9 @@
                             <p class="mt-5"><small class="text-muted"><?php echo $donnees ['modificationdatefr'], $donnees ['posts_id']; ?></small></p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2">LIRE</a>
-                            <a href="editpost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-warning mx-2">MODIFIER</a>
-                            <a href="../model/deletepost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-danger mx-2">SUPPRIMER</a>
+                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2 mb-1">LIRE</a>
+                            <a href="editpost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-warning mx-2 mb-1">MODIFIER</a>
+                            <a href="../model/deletepost.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-danger mx-2 mb-1">SUPPRIMER</a>
                         </div>
                     </div>
                 </div>
