@@ -29,16 +29,16 @@
                     <?php while ($donnees = $reponse->fetch())
                     {
                     ?>
-                    <div class="col-md-6 col-lg-3 mt-4">
+                    <div class="col-md-6 col-lg-4 mt-4">
                         <div class="card bg-secondary">
                         <img class="card-img-top" src="../assets/img/oc.jpg" alt="image du post">
                         <div class="card-body">
-                            <h5 class="card-title text-center"><?php echo htmlspecialchars($donnees ['title']); ?></h5>
-                            <p class="card-text"><?php echo htmlspecialchars($donnees ['leadparagraph']); ?></p>
-                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="card-link">LIRE</a>
+                            <h5 class="card-title text-center text-uppercase"><?php echo htmlspecialchars($donnees ['title']); ?></h5>
+                            <p class="card-text mt-5"><?php echo htmlspecialchars($donnees ['leadparagraph']); ?></p>
+                            <p class="mt-4"><small class="text-muted"><?php echo $donnees ['creationdatefr']; ?></small></p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted"><?php echo $donnees ['creationdatefr']; ?></small>
+                        <div class="card-footer text-center">
+                            <a href="post.php?post=<?php echo $donnees['posts_id'] ?>" class="btn btn-outline-dark bg-primary mx-2 mb-1">LIRE</a>
                         </div>
                     </div>
                   </div>
