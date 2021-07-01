@@ -22,7 +22,7 @@
                 <?php
                 require_once('../model/dbconnect.php');
 
-                $reponse = $bdd->query('SELECT *, date_format(commentdate, \'Le %d/%m/%Y à %Hh%imin%ss\') AS commentdatefr FROM comments INNER JOIN posts ON comments.posts_id = posts.posts_id WHERE commentaccepted = "0"');
+                $reponse = $bdd->query('SELECT *, date_format(commentdate, \'Le %d/%m/%Y à %Hh%imin%ss\') AS commentdatefr FROM posts INNER JOIN comments ON comments.posts_id = posts.posts_id WHERE commentaccepted = "0"');
                 
                 ?>
 
