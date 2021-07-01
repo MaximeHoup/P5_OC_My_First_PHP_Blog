@@ -6,7 +6,7 @@
 
                 <?php
                 require_once('../model/dbconnect.php');
-                $reponse = $bdd->prepare('SELECT content, users_id, commentaccepted, date_format(commentdate, \'(%d/%m/%Y à %Hh%imin%ss)\') AS commentdatefr FROM comments WHERE posts_id = ?');
+                $reponse = $bdd->prepare('SELECT content, nickname, users_id, commentaccepted, date_format(commentdate, \'(%d/%m/%Y à %Hh%imin%ss)\') AS commentdatefr FROM comments WHERE posts_id = ?');
                 $reponse->execute(array($_GET['post']));
 
 
@@ -21,7 +21,7 @@
                         <div class="col-12 mt-2 mb-2 pb-5">
                             <div class="card bg-secondary">
                                 <div class="card-header">
-                                    <p class="text-white"><strong>Pseudo<?php echo ($donnees ['users_id']); ?></strong></p>
+                                    <p class="text-white"><strong><?php echo ($donnees ['nickname']); ?></strong></p>
                                 </div>
                                 <div class="card-body bg-white">
                                     <blockquote>
