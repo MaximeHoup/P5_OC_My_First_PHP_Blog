@@ -4,7 +4,7 @@ $name = valid_donnees($_POST["name"]);
 $mail = valid_donnees($_POST["mail"]);
 $content = valid_donnees($_POST["content"]);
 
-function valid_donnees($donnees){
+public function valid_donnees($donnees){
     $donnees = trim($donnees);
     $donnees = stripslashes($donnees);
     $donnees = htmlspecialchars($donnees);
