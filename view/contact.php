@@ -12,13 +12,13 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form method="post" action="../controller/mail.php">
+                        <form method="post" action="../controller/mailcheck.php">
                             <div class="form-floating">
-                                <input class="form-control" id="inputName" type="text" name="name" placeholder="Enter your name..." />
+                                <input class="form-control" id="inputName" type="text" name="name" placeholder="Enter your name..." required pattern="^[A-Za-z '-]+$" maxlength="20" />
                                 <label for="inputName">Nom</label>
                             </div>
                             <div class="form-floating">
-                                <input class="form-control" id="inputEmail" type="email" name="mail"placeholder="Enter your email..." />
+                                <input class="form-control" id="inputEmail" type="email" name="mail"placeholder="Enter your email..." required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$" />
                                 <label for="inputEmail">Adresse mail</label>
                             </div>
                             <div class="form-floating">
