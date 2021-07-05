@@ -1,4 +1,4 @@
-# Projet 5 - My First PHP Blog / OpenClassrooms
+# Projet 5 - Mon Premier Blog PHP / OpenClassrooms
 
 
 Ce projet a été réalisé lors du projet 5 de ma formation. J'ai utilisé le thème Feelancer disponible sur startbootstrap: https://startbootstrap.com/theme/freelancer
