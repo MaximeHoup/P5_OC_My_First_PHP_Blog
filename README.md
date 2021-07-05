@@ -1,9 +1,10 @@
 # P5_OC_My_First_PHP_Blog
 
 
-J'ai utilisé le thème Clean Blog disponible sur le site startbootstrap.com pour réaliser la partie front de ce blog Si vous voulez voir le code sur GitHub, cliquez sur le lien : https://www.github.com/Maxxxiimus92/p5_blog
+Ce projet a été réalisé lors du projet 5 de ma formation. J'ai utilisé le thème Feelancer disponible sur startbootstrap: https://startbootstrap.com/theme/freelancer
 
-I used the theme Clean Blog available on the website startbootstrap.com If you want to see the code on GitHub, go here : https://www.github.com/Maxxxiimus92/p5_blog
+
+This project was carried out during the 5th project of my formation. I used the Feelancer theme available on startbootstrap: https://startbootstrap.com/theme/freelancer
 
 
 
