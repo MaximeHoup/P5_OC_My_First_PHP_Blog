@@ -10,7 +10,7 @@
 		$email = $_POST['mail'];
 		$content = $_POST['content'];
 		$formcontent="From: $name \n Message: $content";
-		$recipient = "adminp5@gmail.com";
+		$recipient = "adminp5@gmail.com"; //enter your mail here
 		$subject = "Contact Form";
 		$mailheader = "From: $email \r\n";
 		mail($recipient, $subject, $formcontent, $mailheader);
