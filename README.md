@@ -16,6 +16,7 @@ Pour utiliser ce blog, il faut suivre les étapes suivantes :
 - Pour le formulaire de Contact, entrez votre email dans le fichier mail.php situé dans le dossier controller
 
 
+
 To use this blog, you must follow this steps :
 
 - Create a database and import the dbp5.sql file
