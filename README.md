@@ -6,6 +6,10 @@ Ce projet a été réalisé lors du projet 5 de ma formation. J'ai utilisé le t
 
 This project was carried out during the 5th project of my formation. I used the Feelancer theme available on startbootstrap: https://startbootstrap.com/theme/freelancer
 
+Lien vers la dernière analyse SymfonyInsight: https://insight.symfony.com/projects/46aaea61-6e8e-450f-a8dd-8b3d07016986/analyses/64
+
+Link to the last SymfonyInsight analysis: https://insight.symfony.com/projects/46aaea61-6e8e-450f-a8dd-8b3d07016986/analyses/64
+
 
 
 # Installation
